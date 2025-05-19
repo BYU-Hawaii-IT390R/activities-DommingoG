@@ -1,0 +1,49 @@
+# Activity-01: Recursive Scanner with File Size Filter
+
+Enhancement I Chosen
+I implemented the `--min-size` enhancement for the recursive scanner. 
+This enhancement allows the user to filter alll the `.txt` files based on a minimum file size in kilobytes (KB) for mine i used 0.05.
+Only files equal to or larger than the specified size will be shown in the scan results. On my case all are the same as 0.1 Kb
+
+How to Use It
+
+1. Set up the Test Environment
+
+Run the script to create a test folder (`test_root/`) with subdirectories and random `.txt` files:
+
+```bash
+python setup_files.py
+
+
+
+Output:
+PS C:\Users\galli\OneDrive - BYU-Hawaii\Desktop\github\activities-DommingoG\Activity-01> python scan.py test_root --min-size 0.05
+   
+Scanning: C:\Users\galli\OneDrive - BYU-Hawaii\Desktop\github\activities-DommingoG\Activity-01\test_root
+Found 20 text files before filtering
+
+File                                      Size (KB)
+----------------------------------------------------
+docs\file0.txt                                  0.1
+docs\file1.txt                                  0.1
+docs\file2.txt                                  0.1
+docs\file3.txt                                  0.1
+docs\file4.txt                                  0.1
+logs\file0.txt                                  0.1
+logs\file1.txt                                  0.1
+logs\file2.txt                                  0.1
+logs\file3.txt                                  0.1
+logs\file4.txt                                  0.1
+logs\archive\file0.txt                          0.1
+logs\archive\file1.txt                          0.1
+logs\archive\file2.txt                          0.1
+logs\archive\file3.txt                          0.1
+logs\archive\file4.txt                          0.1
+docs\subfolder\file0.txt                        0.1
+docs\subfolder\file1.txt                        0.1
+docs\subfolder\file2.txt                        0.1
+docs\subfolder\file3.txt                        0.1
+docs\subfolder\file4.txt                        0.1
+----------------------------------------------------
+Total files shown: 20
+Total size: 2.0 KB
