@@ -1,0 +1,40 @@
+Who is hammering the box with bad passwords? 
+IP Address      Attempts
+------------------------
+197.5.145.69          28
+2.82.170.124          25
+106.13.236.133        24
+159.89.130.245        18
+167.71.234.157        17
+139.186.77.46         17
+104.42.113.137        15
+121.102.93.198        15
+122.51.81.247         14
+190.52.191.49         14
+139.59.39.185         13
+210.178.121.46        11
+146.0.209.73          11
+
+
+Which passwords succeeded?
+
+Username        Password         IP_Count
+-----------------------------------------
+b'root'         b'admin'                8
+b'root'         b'password'             1
+b'oracle'       b'oracle'               1
+This means:
+The username root with password admin was successfully used from 8 unique IP addresses (most common).
+The username root with password password succeeded once.
+The username oracle with password oracle succeeded once.
+
+
+Any obvious bot clients? 🤖 (pre‑built task)
+Fingerprints seen from ≥ 3 unique IPs
+Fingerprint                                        IPs
+-----------------------------------------------------
+51cba57125523ce4b9db67714a90bf6e                    17
+1616c6d18e845e7a01168a44591f7a35                     4
+eccf733a56108dec8ecc8efbc681be63                     3
+2f300334eb474e4d5ef932343447dd80                     3
+The log analysis identified several distinct SSH client fingerprints appearing across multiple unique IP addresses, indicating the presence of obvious bot clients targeting the system
